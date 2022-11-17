@@ -1,0 +1,26 @@
+{
+  "name": "capybaras",
+  "displayName": "capybaras",
+  "description": "first vscode theme",
+  "version": "0.0.1",
+  "publisher": "DevinPopa",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devin-popa/capybaras"
+  },
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "capybaras",
+        "uiTheme": "vs-dark",
+        "path": "./themes/capybaras-color-theme.json"
+      }
+    ]
+  }
+}
