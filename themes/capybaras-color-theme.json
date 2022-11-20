@@ -1,10 +1,10 @@
 {
 	"name": "capybaras",
 	"colors": {
-		"editor.background": "#222222",
-		"editor.foreground": "#dddddd",
-		"activityBarBadge.background": "#0aa79f",
-		"sideBarTitle.foreground": "#aaaaaa",
+		"editor.background": "#333333",
+		"editor.foreground": "#cccccc",
+		"activityBarBadge.background": "#0091d4",
+		"sideBarTitle.foreground": "#cccccc",
 	},
 	"tokenColors": [
 		{
@@ -15,23 +15,56 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#888888"
+				"foreground": "#929292"
+			}
+		},
+		{
+			"name": "Constants",
+			"scope": [
+				"constant.numeric.dec",
+				"constant.language",
+				"string.quoted.single",
+				"string.quoted.double",
+				"punctuation.definition.string.begin",
+				"punctuation.definition.string.end",
+				"constant.numeric",
+				"constant.language",
+				"support.constant",
+				"constant.character",
+				"constant.escape",
+				"keyword.other.unit",
+				"keyword.other"
+			],
+			"settings": {
+				"foreground": "#0adab7"
 			}
 		},
 		{
 			"name": "Variables",
 			"scope": [
 				"variable",
-				"string constant.other.placeholder"
+				"string constant.other.placeholder",
+				"source.python",
+				"constant.other.color",
+				"punctuation.separator.parameters",
+				"punctuation.separator.arguments",
+				"punctuation.separator.period",
+				"punctuation.separator.colon",
+				"punctuation.section.class.begin",
+				"punctuation.section.function.begin",
+				"meta.indexed-name",
+				"meta.attribute",
+				"meta.item-access.arguments",
+				"meta.function-call.arguments"
 			],
 			"settings": {
-				"foreground": "#00d6c4"
+				"foreground": "#cccccc"
 			}
 		},
 		{
 			"name": "Colors",
 			"scope": [
-				"constant.other.color"
+				//"constant.other.color"
 			],
 			"settings": {
 				"foreground": "#00d6c4"
@@ -44,7 +77,7 @@
 				"invalid.illegal"
 			],
 			"settings": {
-				"foreground": "#FF0000"
+				"foreground": "#fa0c0c"
 			}
 		},
 		{
@@ -52,10 +85,11 @@
 			"scope": [
 				"keyword",
 				"storage.type",
-				"storage.modifier"
+				"storage.modifier",
+				"storage.type.class"
 			],
 			"settings": {
-				"foreground": "#7fcf51"
+				"foreground": "#00aeff"
 			}
 		},
 		{
@@ -72,10 +106,27 @@
 				"punctuation.definition.tag.end.html",
 				"punctuation.section.embedded",
 				"keyword.other.template",
-				"keyword.other.substitution"
+				"keyword.other.substitution",
+				"storage.type.function",
+				"keyword.control.flow"
 			],
 			"settings": {
 				"foreground": "#bd7fda"
+			}
+		},
+		{
+			"name": "Operators and Support Functions",
+			"scope": [
+				"support.function.builtin",
+				"keyword.operator.assignment",
+				"keyword.operator.arithmetic",
+				"meta.function-call.generic",
+				"keyword.operator.logical",
+				"keyword.operator.comparison",
+				"support.type.python"
+			],
+			"settings": {
+				"foreground": "#dfd094"
 			}
 		},
 		{
@@ -86,7 +137,7 @@
 				"markup.deleted.git_gutter"
 			],
 			"settings": {
-				"foreground": "#d32b93"
+				"foreground": "#0ada37"
 			}
 		},
 		{
@@ -99,7 +150,25 @@
 				"keyword.other.special-method"
 			],
 			"settings": {
-				"foreground": "#00e1ff"
+				"foreground": "#00aeff"
+			}
+		},
+		{
+			"name": "Parameters",
+			"scope": [
+				"variable.parameter"
+			],
+			"settings": {
+				"foreground": "#dd5e84"
+			}
+		},
+		{
+			"name": "Indexing and Other Variables",
+			"scope": [
+
+			],
+			"settings": {
+				"foreground": "#eeeeee"
 			}
 		},
 		{
@@ -119,22 +188,6 @@
 			],
 			"settings": {
 				"foreground": "#d8d8d8"
-			}
-		},
-		{
-			"name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
-			"scope": [
-				"constant.numeric",
-				"constant.language",
-				"support.constant",
-				"constant.character",
-				"constant.escape",
-				"variable.parameter",
-				"keyword.other.unit",
-				"keyword.other"
-			],
-			"settings": {
-				"foreground": "#e9778f"
 			}
 		},
 		{
@@ -165,7 +218,7 @@
 				"support.type.sys-types"
 			],
 			"settings": {
-				"foreground": "#FFCB6B"
+				"foreground": "#e98400"
 			}
 		},
 		{
@@ -185,10 +238,13 @@
 				"source.scss support.type.property-name",
 				"source.less support.type.property-name",
 				"source.stylus support.type.property-name",
-				"source.postcss support.type.property-name"
+				"source.postcss support.type.property-name",
+				"punctuation.separator.key-value.css",
+				"punctuation.terminator.rule.css",
+				"punctuation.definition.entity.css"
 			],
 			"settings": {
-				"foreground": "#d8d8d8"
+				"foreground": "#cccccc"
 			}
 		},
 		{
@@ -205,11 +261,11 @@
 		{
 			"name": "Language methods",
 			"scope": [
-				"variable.language"
+				"variable.language",
+				"entity.name.tag.css"
 			],
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#00e1ff"
+				"foreground": "#0ada37"
 			}
 		},
 		{
@@ -238,7 +294,7 @@
 				"entity.other.attribute-name"
 			],
 			"settings": {
-				"foreground": "#e6662b"
+				"foreground": "#bd7fda"
 			}
 		},
 		{
@@ -249,7 +305,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#e6662b"
+				"foreground": "#bd7fda"
 			}
 		},
 		{
@@ -312,7 +368,7 @@
 				"constant.character.escape"
 			],
 			"settings": {
-				"foreground": "#d3097f"
+				"foreground": "#ff6ef3"
 			}
 		},
 		{
