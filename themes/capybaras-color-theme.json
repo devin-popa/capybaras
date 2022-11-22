@@ -161,7 +161,7 @@
 				"entity.name.tag.css"
 			],
 			"settings": {
-				"foreground": "#00aeff"
+				"foreground": "#e29843"
 			}
 		},
 		{
@@ -317,7 +317,7 @@
 				"entity.other.attribute-name"
 			],
 			"settings": {
-				"foreground": "#e29843"
+				"foreground": "#00aeff"
 			}
 		},
 		{
